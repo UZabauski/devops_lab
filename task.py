@@ -1,7 +1,7 @@
 import config
+from datetime import datetime
 import json
 import psutil
-from datetime import datetime
 from time import sleep
 
 
