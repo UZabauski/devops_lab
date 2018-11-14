@@ -2,8 +2,8 @@ import re
 
 
 def func(line):
-    mo = \
-        re.fullmatch(r'(?P<n1>-?\d+)(?P<oper>[-/\*\+])(?P<n2>-?\d+)=(?P<n3>-?\d+)\s*', line)
+    mo = re.match(r'(%s)(?P<oper>[-/\*\+])(%s)=(%s)$' % ("?P<n1>-?\\d+",
+                  "?P<n2>-?\\d+", "?P<n3>-?\\d+"), line)
     if len(line) <= 100 and mo:
         n1 = int(mo.groupdict()['n1'])
         n2 = int(mo.groupdict()['n2'])
