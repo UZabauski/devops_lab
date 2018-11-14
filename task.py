@@ -1,6 +1,6 @@
 import config
 import json
-import psutill
+import psutil
 from datetime import datetime
 from time import sleep
 
