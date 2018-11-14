@@ -1,8 +1,8 @@
-import psutil
 import config
 import json
-from time import sleep
+import psutill
 from datetime import datetime
+from time import sleep
 
 
 with open("config.py", "w") as f:
