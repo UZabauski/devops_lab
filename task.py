@@ -1,4 +1,3 @@
-import config
 from datetime import datetime
 import json
 import psutil
@@ -12,6 +11,8 @@ with open("config.py", "w") as f:
     f.write('\n    file_name = "output.json"')
     f.write('\nelif output_type == "text":')
     f.write('\n    file_name = "output.txt"')
+
+import config  # noqa
 
 
 def status():
