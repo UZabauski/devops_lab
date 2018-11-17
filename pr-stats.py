@@ -1,6 +1,6 @@
-import requests
-import getpass
 import argparse
+import getpass
+import requests
 
 
 parser = argparse.ArgumentParser()
