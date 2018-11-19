@@ -1,4 +1,14 @@
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-c = list(set(a) & set(b))
-print(c)
+def year(y):
+    while 1900 <= y <= 10 ** 5:
+        if y % 4 == 0 and y % 100 != 0 or y % 400 == 0:
+            print("True - year is leap")
+            break
+        else:
+            print("False - year isn't leap")
+            break
+    return year
+
+
+if __name__ == "__main__":
+    y = int(input("Input year: "))
+    year(y)
